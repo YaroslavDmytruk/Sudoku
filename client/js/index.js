@@ -10,6 +10,9 @@ window.sudoku = {};
 window.sudoku.matrixStart = createSudoku();
 window.sudoku.matrixCurrent = window.sudoku.matrixStart;
 
-
+$(document).ready(function () {
+    console.log("ready");
+    createDOMSudoku(window.sudoku.matrixStart);
+});
 
 console.log("in main");

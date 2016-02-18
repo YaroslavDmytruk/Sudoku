@@ -34,14 +34,14 @@ gulp.task('css', function () {
 gulp.task('js', function () {
     return gulp.src('client/js/partials/*.js')
         .pipe(concat('all.js'))
-        // .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest('build/'));
 });
 
 gulp.task("build", ["css","html","js"]);
 
 gulp.task('default', ["build"], function () {
-    gulp.watch('client/sass/**/*.scss', ['css']);
+    gulp.watch('client/scss/**/*.scss', ['css']);
     gulp.watch('client/template/**/*.html', ['html']);
     gulp.watch('client/js/**/*', ['js']);
 });
