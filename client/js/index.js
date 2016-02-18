@@ -24,18 +24,21 @@ $(document).ready(function () {
             window.sudoku.matrixCurrent = makeSpaces(1,window.sudoku.matrixStart);
             createDOMSudoku(window.sudoku.matrixCurrent);
             setChoiceBoardEvenets();
+            submitSudoku();
             $levels.fadeOut();
         });
         $('#medium').click(function(){
             window.sudoku.matrixCurrent = makeSpaces(2,window.sudoku.matrixStart);
             createDOMSudoku(window.sudoku.matrixCurrent);
             setChoiceBoardEvenets();
+            submitSudoku();
             $levels.fadeOut();
         });
         $('#hard').click(function(){
             window.sudoku.matrixCurrent = makeSpaces(3,window.sudoku.matrixStart);
             createDOMSudoku(window.sudoku.matrixCurrent);
             setChoiceBoardEvenets();
+            submitSudoku();
             $levels.fadeOut();
         });
 
