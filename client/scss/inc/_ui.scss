@@ -1,0 +1,12 @@
+.ui-btn {
+  padding: 5px 10px;
+  border: $border-width solid $white;
+  border-radius: $border-radius;
+  background: $sea-green;
+  outline: none;
+
+  &:hover {
+    background: $white;
+  }
+}
+

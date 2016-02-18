@@ -1,19 +1,37 @@
 .board {
+  width: 30%;
   margin: 0 auto;
-  border: 1px solid black;
+  //height: 534px;
+  background: transparent top left repeat;
+  //box-shadow: 5px 5px 5px #DDDDDD;
+  user-select: none;
+  border: 1px solid $board-border;
+  border-radius: 5px;
+  z-index: 1;
 
   &__cell {
-    background: #c0c0c0;
-    border: 1px solid green;
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-    &_empty {
-
+    position: relative;
+    float: left;
+    width: 54px;
+    height: 54px;
+    margin: 1px 0 0 1px;
+    border: 1px solid $cell-border;
+    line-height: 54px;
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+    color: $default-text;
+    background-color: $white;
+    border-radius: 3px;
+    cursor: text;
+    &_base {
+      cursor: pointer;
+      background: $cell-base;
     }
   }
+
   &__row {
-    border: 1px solid red;
+    height: 57px;
   }
 
 }
