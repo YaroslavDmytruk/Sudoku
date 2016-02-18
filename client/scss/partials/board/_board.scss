@@ -1,0 +1,19 @@
+.board {
+  margin: 0 auto;
+  border: 1px solid black;
+
+  &__cell {
+    background: #c0c0c0;
+    border: 1px solid green;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    &_empty {
+
+    }
+  }
+  &__row {
+    border: 1px solid red;
+  }
+
+}
