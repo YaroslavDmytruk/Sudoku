@@ -1,8 +1,32 @@
 .ui-btn {
   padding: 10px 20px;
   border: 3px solid $sea-green;
+
+  &.ui-btn_close {
+
+  }
 }
 
-.ui-btn_close {
+.line {
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid red;
+  position: absolute;
+}
+.line1 {
 
+  transform:
+  translateY(-20px)
+  translateX(5px)
+  rotate(27deg);
+
+  /* top: -20px; */
+}
+.line2 {
+  transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(-26deg);
+  top: -33px;
+  left: -13px;
 }
