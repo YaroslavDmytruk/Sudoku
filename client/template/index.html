@@ -8,11 +8,17 @@
 
 <head>
     {% include "partials/head.html" %}
+    <script src="../client/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="all.js "></script>
+    <script src="../client/js/index.js"></script>
 </head>
 <body>
 
-<script src="../client/js/vendor/jquery-1.11.3.min.js"></script>
-<script src="all.js "></script>
-<script src="../client/js/index.js"></script>
+<div id="container-sudoku">
+
+</div>
+{% include "partials/baseSudokuDOM.html" %}
+
 </body>
 </html>
