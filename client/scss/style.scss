@@ -2,10 +2,13 @@
 @import 'inc/fonts';
 @import 'inc/mixins';
 @import 'inc/variables';
+@import 'inc/ui';
 @import 'partials/common';
 @import 'partials/layout';
-@import 'partials/board/board';
 
+@import 'partials/menu/menu';
+
+@import 'partials/board/board';
 
 
 
