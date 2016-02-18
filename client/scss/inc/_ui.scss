@@ -1,32 +1,12 @@
 .ui-btn {
-  padding: 10px 20px;
-  border: 3px solid $sea-green;
+  padding: 5px 10px;
+  border: $border-width solid $white;
+  border-radius: $border-radius;
+  background: $sea-green;
+  outline: none;
 
-  &.ui-btn_close {
-
+  &:hover {
+    background: $white;
   }
 }
 
-.line {
-  width: 112px;
-  height: 47px;
-  border-bottom: 1px solid red;
-  position: absolute;
-}
-.line1 {
-
-  transform:
-  translateY(-20px)
-  translateX(5px)
-  rotate(27deg);
-
-  /* top: -20px; */
-}
-.line2 {
-  transform:
-  translateY(20px)
-  translateX(5px)
-  rotate(-26deg);
-  top: -33px;
-  left: -13px;
-}
