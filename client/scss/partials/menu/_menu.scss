@@ -1,5 +1,9 @@
 .menu {
   margin: 50px auto;
+
+  &.menu_board {
+    margin: 0 auto;
+  }
 }
 
 
@@ -9,4 +13,8 @@
   margin: 20px auto;
   padding: 10px 20px;
   font-weight: bold;
+
+  &.menu__item_board {
+    margin: 0 auto;
+  }
 }
