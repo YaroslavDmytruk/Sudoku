@@ -25,6 +25,10 @@ function createSudoku() {
             secondRandomRow = randomInteger(firstRow, thirdRow),
             temp = [];
 
+        if(firstRandomRow === secondRandomRow) {
+            return;
+        }
+
         for (var columnIndex = 0; columnIndex < 9; columnIndex++) {
             temp[columnIndex] = constSudoku[firstRandomRow][columnIndex];
             constSudoku[firstRandomRow][columnIndex] = constSudoku[secondRandomRow][columnIndex];
@@ -36,6 +40,10 @@ function createSudoku() {
         var firstRandomColumn = randomInteger(firstColumn, thirdColumn),
             secondRandomColumn = randomInteger(firstColumn, thirdColumn),
             temp = [];
+
+        if(firstRandomColumn === secondRandomColumn) {
+            return;
+        }
 
         for (var rowIndex = 0; rowIndex < 9; rowIndex++) {
             temp[rowIndex] = constSudoku[rowIndex][firstRandomColumn];
