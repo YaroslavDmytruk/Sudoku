@@ -8,11 +8,13 @@
 
 window.sudoku = {};
 window.sudoku.matrixStart = createSudoku();
-window.sudoku.matrixCurrent = window.sudoku.matrixStart;
+window.sudoku.matrixCurrent = makeSpaces(1,window.sudoku.matrixStart);
 
 $(document).ready(function () {
     console.log("ready");
-    createDOMSudoku(window.sudoku.matrixStart);
+    createDOMSudoku(window.sudoku.matrixCurrent);
+    setChoiceBoardEvenets();
+
 });
 
 console.log("in main");
