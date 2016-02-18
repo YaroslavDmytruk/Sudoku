@@ -22,7 +22,16 @@ function setChoiceBoardEvenets() {
 
     $("#choiceBoard .numbers-item__number").on("click", function () {
         console.log("I choosed " + $(this).html());
-        window.sudoku.value = parseInt($(this).html(), 10);
+
+        var value = parseInt($(this).html(), 10);
+
+        if(value !== 0) {
+            window.sudoku.value = value;
+        }
+        else {
+            window.sudoku.value = "";
+        }
+
         window.sudoku.$obj.html(window.sudoku.value);
         window.sudoku.matrixCurrent[window.sudoku.x][window.sudoku.y] = window.sudoku.value;
         hideChoiceBoard();
