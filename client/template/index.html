@@ -8,17 +8,18 @@
 
 <head>
     {% include "partials/head.html" %}
-    <script src="../client/js/vendor/jquery-1.11.3.min.js"></script>
-    <script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
-    <script src="all.js "></script>
-    <script src="../client/js/index.js"></script>
+
 </head>
 <body>
+{% include "partials/board/board.html" %}
+{% include "partials/numbers/numbers.html" %}
+{% include "partials/menu/menu.html" %}
 
-<div id="container-sudoku">
 
-</div>
-{% include "partials/baseSudokuDOM.html" %}
+<script src="../client/js/vendor/jquery-1.11.3.min.js"></script>
+<script src="all.js "></script>
+<script src="../client/js/index.js"></script>
+
 
 </body>
 </html>
