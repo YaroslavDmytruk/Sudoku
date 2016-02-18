@@ -11,17 +11,17 @@ function hideChoiceBoard() {
 }
 
 function setChoiceBoardEvenets() {
-    $("#container-sudoku .cell").on("click", function() {
-        if(!$(this).hasClass("base")) {
+    $("#container-sudoku .board__cell").on("click", function() {
+        if(!$(this).hasClass("board__cell_base")) {
             showChoiceBoard();
         }
     });
 
-    $("#choiceBoard .close").on("click", function() {
+    $("#choiceBoard .numbers-item__close").on("click", function() {
         hideChoiceBoard();
     });
 
-    $("#choiceBoard .number").on("click", function() {
+    $("#choiceBoard .numbers-item__number").on("click", function() {
         console.log("I choosed " + $(this).html());
         hideChoiceBoard();
     });
