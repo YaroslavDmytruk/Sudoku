@@ -8,13 +8,33 @@
 
 window.sudoku = {};
 window.sudoku.matrixStart = createSudoku();
-window.sudoku.matrixCurrent = makeSpaces(1,window.sudoku.matrixStart);
+;
 
 $(document).ready(function () {
     console.log("ready");
-    createDOMSudoku(window.sudoku.matrixCurrent);
-    setChoiceBoardEvenets();
 
+
+
+    var $levels = $('#levels');
+
+    $('#easy').click(function(){
+        window.sudoku.matrixCurrent = makeSpaces(1,window.sudoku.matrixStart);
+        createDOMSudoku(window.sudoku.matrixCurrent);
+        setChoiceBoardEvenets();
+        $levels.fadeOut();
+    });
+    $('#medium').click(function(){
+        window.sudoku.matrixCurrent = makeSpaces(2,window.sudoku.matrixStart);
+        createDOMSudoku(window.sudoku.matrixCurrent);
+        setChoiceBoardEvenets();
+        $levels.fadeOut();
+    });
+    $('#hard').click(function(){
+        window.sudoku.matrixCurrent = makeSpaces(3,window.sudoku.matrixStart);
+        createDOMSudoku(window.sudoku.matrixCurrent);
+        setChoiceBoardEvenets();
+        $levels.fadeOut();
+    });
 });
 
 console.log("in main");
