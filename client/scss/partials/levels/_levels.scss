@@ -1,12 +1,14 @@
 .levels {
-  margin: 50px auto;
+  height: 100vh;
+  background: $sea-green;
+  padding-top: 10px;
 }
 
-
-.levels__item {
-  display: block;
+.levels__title {
   text-align: center;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-weight: bold;
+}
+
+.levels__content {
+  font-size: 26px;
+  text-align: center;
 }
