@@ -1,4 +1,6 @@
 .board {
+  width: 30%;
+  margin:0 auto;
   //height: 534px;
   background: transparent top left repeat;
   //box-shadow: 5px 5px 5px #DDDDDD;
@@ -21,8 +23,10 @@
     color: $default-text;
     background-color: $white;
     border-radius: 3px;
-    &_empty {
-      cursor: text;
+    cursor: text;
+    &_base {
+      cursor: pointer;
+      background: $cell-base;
     }
   }
   &__row {
