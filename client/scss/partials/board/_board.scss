@@ -1,20 +1,21 @@
 .board {
   width: 30%;
-  margin: 0 auto;
+  margin: 30px auto;
   //height: 534px;
-  background: transparent top left repeat;
+  background: $sea-green;
   //box-shadow: 5px 5px 5px #DDDDDD;
   user-select: none;
   border: 1px solid $board-border;
   border-radius: 5px;
   z-index: 1;
 
+
   &__cell {
     position: relative;
     float: left;
-    width: 54px;
+    width: 10.3%;
     height: 54px;
-    margin: 1px 0 0 1px;
+    margin: .5% 0 0 .5%;
     border: 1px solid $cell-border;
     line-height: 54px;
     text-align: center;
@@ -24,6 +25,12 @@
     background-color: $white;
     border-radius: 3px;
     cursor: text;
+    &:nth-child(3n){
+      margin-right: 1%;
+    }
+    &:nth-child(9){
+      margin-right: 0;
+    }
     &_base {
       cursor: pointer;
       background: $cell-base;
@@ -32,6 +39,12 @@
 
   &__row {
     height: 57px;
+    &:nth-child(3n){
+      margin-bottom: 1%;
+    }
+    &:last-child{
+      margin-bottom: .5%;
+    }
   }
 
 }
