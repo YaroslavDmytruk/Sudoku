@@ -2,11 +2,13 @@
 
 $board-border: #CCCCCC;
 $cell-border: #ccc;
-$cell-base: #82ff7c;
+$cell-base: #daffd8;
 
 //default colors
 
 $white: #fff;
+$red: #ff0000;
+
 $default-text: #333;
 
 //gradient
@@ -17,4 +19,5 @@ $default-text: #333;
 $sea-green: #10b2aa;
 
 $border-width: 1px;
-$border-radius: 10px
+$border-radius: 10px;
+$border-radius-small: 5px

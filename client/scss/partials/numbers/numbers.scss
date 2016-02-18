@@ -1,17 +1,34 @@
 .numbers {
-  width: 90px;
+  width: 130px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 200px;
+  left: 130px;
   overflow: hidden;
+  background: $sea-green;
+  border-radius: $border-radius-small;
+  padding: .5%;
   &-item__number {
-    float: left;
-    width: 10px;
-    height: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     border: 1px solid $board-border;
+    cursor: pointer;
+    margin: 1.5%;
+    border-radius: $border-radius-small;
+    background: $white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    &:hover{
+      background: darken($white, 8%);
+    }
   }
   &-item__close {
-
+    cursor: pointer;
+    float: right;
+    &:hover{
+      color: $red;
+    }
   }
 
 }

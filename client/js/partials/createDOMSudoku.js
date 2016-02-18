@@ -6,6 +6,7 @@
 
 function createDOMSudoku(matrixStart) {
     var $container = $('#container-sudoku');
+    $container.empty();
     var htmlTmp = "";
 
     var length = matrixStart.length;
