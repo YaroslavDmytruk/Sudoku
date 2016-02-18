@@ -17,24 +17,34 @@ $(document).ready(function () {
 
     var $levels = $('#levels');
 
-    $('#easy').click(function(){
-        window.sudoku.matrixCurrent = makeSpaces(1,window.sudoku.matrixStart);
-        createDOMSudoku(window.sudoku.matrixCurrent);
-        setChoiceBoardEvenets();
-        $levels.fadeOut();
-    });
-    $('#medium').click(function(){
-        window.sudoku.matrixCurrent = makeSpaces(2,window.sudoku.matrixStart);
-        createDOMSudoku(window.sudoku.matrixCurrent);
-        setChoiceBoardEvenets();
-        $levels.fadeOut();
-    });
-    $('#hard').click(function(){
-        window.sudoku.matrixCurrent = makeSpaces(3,window.sudoku.matrixStart);
-        createDOMSudoku(window.sudoku.matrixCurrent);
-        setChoiceBoardEvenets();
-        $levels.fadeOut();
-    });
+    init();
+
+    function init() {
+        $('#easy').click(function(){
+            window.sudoku.matrixCurrent = makeSpaces(1,window.sudoku.matrixStart);
+            createDOMSudoku(window.sudoku.matrixCurrent);
+            setChoiceBoardEvenets();
+            $levels.fadeOut();
+        });
+        $('#medium').click(function(){
+            window.sudoku.matrixCurrent = makeSpaces(2,window.sudoku.matrixStart);
+            createDOMSudoku(window.sudoku.matrixCurrent);
+            setChoiceBoardEvenets();
+            $levels.fadeOut();
+        });
+        $('#hard').click(function(){
+            window.sudoku.matrixCurrent = makeSpaces(3,window.sudoku.matrixStart);
+            createDOMSudoku(window.sudoku.matrixCurrent);
+            setChoiceBoardEvenets();
+            $levels.fadeOut();
+        });
+
+        $('#restart').click(function () {
+            $levels.fadeIn();
+            window.sudoku.matrixStart = createSudoku();
+            init();
+        })
+    };
 });
 
 console.log("in main");
