@@ -1,7 +1,3 @@
-$(document).ready(function() {
-    setChoiceBoardEvenets();
-});
-
 function showChoiceBoard() {
     $("#choiceBoard").show();
 }
@@ -11,18 +7,24 @@ function hideChoiceBoard() {
 }
 
 function setChoiceBoardEvenets() {
-    $("#container-sudoku .board__cell").on("click", function() {
-        if(!$(this).hasClass("board__cell_base")) {
+    $("#container-sudoku .board__cell").on("click", function () {
+        if (!$(this).hasClass("board__cell_base")) {
             showChoiceBoard();
         }
+        window.sudoku.x = $(this).data('x');
+        window.sudoku.y = $(this).data('y');
+        window.sudoku.$obj = $(this);
     });
 
-    $("#choiceBoard .numbers-item__close").on("click", function() {
+    $("#choiceBoard .numbers-item__close").on("click", function () {
         hideChoiceBoard();
     });
 
-    $("#choiceBoard .numbers-item__number").on("click", function() {
+    $("#choiceBoard .numbers-item__number").on("click", function () {
         console.log("I choosed " + $(this).html());
+        window.sudoku.value = parseInt($(this).html(), 10);
+        window.sudoku.$obj.html(window.sudoku.value);
+        window.sudoku.matrixCurrent[window.sudoku.x][window.sudoku.y] = window.sudoku.value;
         hideChoiceBoard();
     });
 
