@@ -1,21 +1,12 @@
-<!-- Modal -->
-<div id="myModal" class="menu" role="dialog">
+<div class="menu">
+  <h1 class="menu__title">Sudoku game</h1>
 
-  <!-- Modal content-->
   <div class="menu__content">
-    <div class="menu__header">
-      <button type="button" class="ui-btn ui-btn_close" data-dismiss="modal">
-        <span class="line1"></span>
-        <span class="line2"></span>
-      </button>
-      <h4 class="modal-title">Modal Header</h4>
-    </div>
-    <div class="modal-body">
-      <p>Some text in the modal.</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    </div>
+    <div>Choose your level</div>
+
+    {% include "../levels/levels.html" %}
   </div>
+
+
 
 </div>

@@ -1,11 +1,16 @@
 .numbers {
+  width: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &-item__number {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $board-border;
+  }
+  &-item__close {
 
-  $-item {
-  float: left;
-
-    $__symbol {
-
-    }
   }
 
 }

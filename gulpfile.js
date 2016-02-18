@@ -19,9 +19,9 @@ gulp.task('html', function () {
 gulp.task('css', function () {
     return gulp.src('client/scss/style.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(uncss({
-           html: ['build/index.html', 'build/**/*.html']
-        }))
+        //.pipe(uncss({
+        //   html: ['build/index.html', 'build/**/*.html']
+        //}))
         .pipe( postcss([ require('autoprefixer'), 
             require('postcss-focus'), 
             require('postcss-discard-comments')]) )

@@ -1,4 +1,14 @@
 .menu {
   height: 100vh;
   background: $sea-green;
+  padding-top: 10px;
+}
+
+.menu__title {
+  text-align: center;
+}
+
+.menu__content {
+  font-size: 26px;
+  text-align: center;
 }

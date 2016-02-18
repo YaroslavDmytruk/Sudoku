@@ -1,3 +1,15 @@
+
+body{
+  position: relative;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 a {
   text-decoration: none;
 
@@ -18,3 +30,8 @@ a {
     clear: both;
   }
 }
+
+h1 {
+  font-size: 50px;
+}
+
