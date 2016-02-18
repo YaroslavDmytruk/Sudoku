@@ -1,9 +1,15 @@
 .numbers {
-
-  $-item {
+  width: 90px;
+position: absolute;
+  top: 0;
+  left: 0;
+  &-item {
   float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $board-border;
 
-    $__symbol {
+    &__symbol {
 
     }
   }
