@@ -1,21 +1,13 @@
 {
-  "name": "defEnv",
+  "name": "Sudoku",
   "version": "1.0.0",
-  "description": "default_enviroment",
   "main": "gulpfile.js",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://git.epam.com/maksym_goncharov/defaultenviroment.git"
-  },
-  "bugs": {
-    "url": "https://git.epam.com/maksym_goncharov/defaultenviroment/issues"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Maksym_Goncharov",
+  "author": "Team 4",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.3.3",

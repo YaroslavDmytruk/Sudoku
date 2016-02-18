@@ -3,19 +3,3 @@
   padding: 0;
   list-style: none;
 }
-
-@mixin title-line ($color, $width){
-  content: '';
-  position: relative;
-  display: inline-block;
-  width: $width;
-  height: 2px;
-  vertical-align: middle;
-  background: $color;
-  background-clip: content-box;
-  border-bottom: 1px solid $color;
-}
-
-.g-clearfix{
-  clear: both;
-}
