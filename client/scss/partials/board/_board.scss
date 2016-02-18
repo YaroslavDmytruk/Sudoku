@@ -1,6 +1,6 @@
 .board {
   width: 30%;
-  margin:0 auto;
+  margin: 0 auto;
   //height: 534px;
   background: transparent top left repeat;
   //box-shadow: 5px 5px 5px #DDDDDD;
@@ -29,6 +29,7 @@
       background: $cell-base;
     }
   }
+
   &__row {
     height: 57px;
   }
