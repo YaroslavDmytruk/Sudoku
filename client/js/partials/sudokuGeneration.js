@@ -1,7 +1,7 @@
 function createSudoku() {
     var constSudoku = [
         [1, 2, 3, 4, 5, 6, 7, 8, 9],
-        [3, 4, 5, 6, 7, 8, 9, 1, 2],
+        [4, 5, 6, 7, 8, 9, 1, 2, 3],
         [7, 8, 9, 1, 2, 3, 4, 5, 6],
         [2, 3, 4, 5, 6, 7, 8, 9, 1],
         [5, 6, 7, 8, 9, 1, 2, 3, 4],
@@ -17,8 +17,6 @@ function createSudoku() {
             swapColumn(index * 3, index * 3 + 2, constSudoku);
         }
     }
-
-
 
     function swapRow(firstRow, thirdRow, constSudoku) {
         var firstRandomRow = randomInteger(firstRow, thirdRow),
@@ -50,3 +48,4 @@ function createSudoku() {
         return rand;
     }
 }
+
